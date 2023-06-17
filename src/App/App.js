@@ -1,9 +1,7 @@
 import './App.css';
-import Dropdown from "./Dropdown";
-import Layout from "../components/Layout";
-import {userState} from "react";
 
-const [selected, setSelected]=userState ("");
+import Layout from "../components/Layout";
+
 function App () {
     return (
             <Layout>
