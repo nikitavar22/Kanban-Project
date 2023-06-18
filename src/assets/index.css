@@ -2,3 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    #user:hover .swap {
+        @apply rotate-180;
+    }
+}
