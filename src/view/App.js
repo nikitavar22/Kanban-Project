@@ -1,7 +1,8 @@
+import React, { useState } from 'react';
 import Layout from "../components/Layout";
 import Card from "../components/Card";
 
-const data = [
+let initialData  = [
     {
         title: 'Backlog',
         inputs: [
@@ -43,6 +44,30 @@ const data = [
             {
                 title: 'Shop page – performance issues',
             },
+            {
+                title: 'Shop bug3',
+            },
+            {
+                title: 'Shop bug4',
+            },
+            {
+                title: 'Shop bug5',
+            },
+            {
+                title: 'Shop page – performance issues',
+            },
+            {
+                title: 'Shop bug3',
+            },
+            {
+                title: 'Shop bug4',
+            },
+            {
+                title: 'Shop bug5',
+            },
+            {
+                title: 'Shop page – performance issues',
+            },
         ]
     },
     {
@@ -70,6 +95,14 @@ const data = [
 ]
 
 function App () {
+    const [data, setData] = useState(initialData);
+
+    const addInput = (index, appendValue) => {
+        let newData = [...data];
+        newData[index].inputs.push(appendValue);
+        setData(newData);
+    }
+
     return (
             <Layout>
                 <div id="container" className="container mx-auto">
@@ -78,7 +111,7 @@ function App () {
 
                         {data.map((item, i) => {
                             return (
-                                <Card data={item}/>
+                                <Card data={item} addInput={addInput} index={i}/>
                             );
                         })}
 
