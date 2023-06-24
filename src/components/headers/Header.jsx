@@ -1,12 +1,8 @@
-import logo from '../img/logoScan.png';
-
-
-
 function Header () {
     return (
         <header id="header" className="flex  h-[93px]">
             <div>
-                <img src={logo}/>
+                123
             </div>
             <ul>
                 <li>
