@@ -1,16 +1,40 @@
-import Profile from "../Profile";
+import logo from '../img/logoScan.png';
 
-function Header() {
+
+
+function Header () {
     return (
-        <header id="header" className="h-[55px] flex items-center justify-between md:bg-[#0067A3] bg-[#0079BF]">
-            <h3 id="logo" className="hidden md:block text-[28px] text-white font-normal ml-5">Awesome Kanban Board</h3>
-            <div className="ml-auto">
-                <Profile/>
+        <header id="header" className="flex  h-[93px]">
+            <div>
+                <img src={logo}/>
+            </div>
+            <ul>
+                <li>
+                    Главная
+                </li>
+                <li>
+                    Тарифы
+                </li>
+                <li>
+                    FAQ
+                </li>
+            </ul>
+            <div id="regOrSign">
+                <ul>
+                    <li>
+                        Зарегистрироваться
+                    </li>
+                    <svg width="2" height="26" viewBox="0 0 2 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect opacity="0.6" width="2" height="26" transform="matrix(-1 0 0 1 2 0)" fill="#029491"/>
+                    </svg>
+                    <button>
+                        Войти
+                    </button>
+                </ul>
             </div>
         </header>
     );
-
 }
 
-export default Header;
 
+export default Header;

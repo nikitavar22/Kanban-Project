@@ -68,6 +68,42 @@ let initialData  = [
             {
                 title: 'Shop page – performance issues',
             },
+            {
+                title: 'Shop bug3',
+            },
+            {
+                title: 'Shop bug4',
+            },
+            {
+                title: 'Shop bug5',
+            },
+            {
+                title: 'Shop page – performance issues',
+            },
+            {
+                title: 'Shop bug3',
+            },
+            {
+                title: 'Shop bug4',
+            },
+            {
+                title: 'Shop bug5',
+            },
+            {
+                title: 'Shop page – performance issues',
+            },
+            {
+                title: 'Shop bug3',
+            },
+            {
+                title: 'Shop bug4',
+            },
+            {
+                title: 'Shop bug5',
+            },
+            {
+                title: 'Shop page – performance issues',
+            },
         ]
     },
     {
