@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import InputComponent from "./InputComponent";
+import MainPage from "./MainPage";
+import {Route, Routes, Link} from "react-router-dom";
 
 function Card(props) {
     const { type, tasks, task, setTasks } = props

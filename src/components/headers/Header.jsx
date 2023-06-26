@@ -1,32 +1,11 @@
+import Profile from '../Profile'
+
 function Header () {
     return (
-        <header id="header" className="flex  h-[93px]">
-            <div>
-                123
-            </div>
-            <ul>
-                <li>
-                    Главная
-                </li>
-                <li>
-                    Тарифы
-                </li>
-                <li>
-                    FAQ
-                </li>
-            </ul>
-            <div id="regOrSign">
-                <ul>
-                    <li>
-                        Зарегистрироваться
-                    </li>
-                    <svg width="2" height="26" viewBox="0 0 2 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect opacity="0.6" width="2" height="26" transform="matrix(-1 0 0 1 2 0)" fill="#029491"/>
-                    </svg>
-                    <button>
-                        Войти
-                    </button>
-                </ul>
+        <header id="header" className="h-[55px]  bg-[#0067A3] text-white">
+            <div className="mx-5 h-[55px] items-center md:flex flex justify-between text-white">
+                <a href="../Layout.jsx" className="text-[28px] text-white">Awesome Kankan Board</a>
+                <Profile/>
             </div>
         </header>
     );
